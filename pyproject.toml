@@ -1,0 +1,13 @@
+[project]
+name = "autolabeler"
+version = "0.1.0"
+description = "Reference-guided fish annotations for a single-class YOLO experiment"
+requires-python = ">=3.11"
+dependencies = [
+  "openai>=1.68",
+  "pydantic>=2.8",
+  "Pillow>=10.4",
+  "python-dotenv>=1.0",
+]
+[project.optional-dependencies]
+train = ["ultralytics>=8.3"]
